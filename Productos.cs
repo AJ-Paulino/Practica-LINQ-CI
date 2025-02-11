@@ -12,13 +12,13 @@ namespace Practica_LINQ_CI
         {
             return new List<Producto>
            {
-            new Producto {Id=1, Nombre="Laptop", Descripcion="Laptop de alta gama", Precio=999.99m * 61.57m, Stock=50, Categoria="Electrónica", FechaCreacion=DateTime.Now},
+            new Producto {Id=1, Nombre="Laptop", Descripcion="Laptop de alta gama", Precio=999.99m * 61.57m, Stock=9, Categoria="Electrónica", FechaCreacion=DateTime.Now},
             new Producto {Id=2, Nombre="Smartphone", Descripcion="Smartphone con cámara de 108MP", Precio=799.99m * 61.57m, Stock=150, Categoria="Electrónica", FechaCreacion=DateTime.Now},
             new Producto {Id=3, Nombre="Tablet", Descripcion="Tablet con pantalla de 10 pulgadas", Precio=299.99m * 61.57m, Stock=200, Categoria="Electrónica", FechaCreacion=DateTime.Now},
             new Producto {Id=4, Nombre="Monitor", Descripcion="Monitor 4K de 27 pulgadas", Precio=399.99m * 61.57m, Stock=75, Categoria="Electrónica", FechaCreacion=DateTime.Now},
             new Producto {Id=5, Nombre="Teclado", Descripcion="Teclado mecánico retroiluminado", Precio=89.99m * 61.57m, Stock=120, Categoria="Accesorios", FechaCreacion=DateTime.Now},
-            new Producto {Id=6, Nombre="Ratón", Descripcion="Ratón inalámbrico ergonómico", Precio=49.99m * 61.57m, Stock=180, Categoria="Accesorios", FechaCreacion=DateTime.Now},
-            new Producto {Id=7, Nombre="Impresora", Descripcion="Impresora multifunción", Precio=129.99m * 61.57m, Stock=60, Categoria="Oficina", FechaCreacion=DateTime.Now},
+            new Producto {Id=6, Nombre="Ratón", Descripcion="Ratón inalámbrico ergonómico", Precio=1.99m * 61.57m, Stock=180, Categoria="Accesorios", FechaCreacion=DateTime.Now},
+            new Producto {Id=7, Nombre="Impresora", Descripcion="Impresora multifunción", Precio=129.99m * 61.57m, Stock=5, Categoria="Oficina", FechaCreacion=DateTime.Now},
             new Producto {Id=8, Nombre="Auriculares", Descripcion="Auriculares con cancelación de ruido", Precio=199.99m * 61.57m, Stock=90, Categoria="Accesorios", FechaCreacion=DateTime.Now},
             new Producto {Id=9, Nombre="Altavoces", Descripcion="Altavoces Bluetooth portátiles", Precio=59.99m * 61.57m, Stock=140, Categoria="Accesorios", FechaCreacion=DateTime.Now},
             new Producto {Id=10, Nombre="Cámara", Descripcion="Cámara digital de 24MP", Precio=499.99m * 61.57m, Stock=30, Categoria="Fotografía", FechaCreacion=DateTime.Now},
@@ -28,7 +28,7 @@ namespace Practica_LINQ_CI
             new Producto {Id=14, Nombre="Disco Duro", Descripcion="Disco duro externo de 2TB", Precio=89.99m * 61.57m, Stock=130, Categoria="Almacenamiento", FechaCreacion=DateTime.Now},
             new Producto {Id=15, Nombre="Memoria USB", Descripcion="Memoria USB de 128GB", Precio=29.99m * 61.57m, Stock=250, Categoria="Almacenamiento", FechaCreacion=DateTime.Now},
             new Producto {Id=16, Nombre="Proyector", Descripcion="Proyector portátil", Precio=299.99m * 61.57m, Stock=40, Categoria="Electrónica", FechaCreacion=DateTime.Now},
-            new Producto {Id=17, Nombre="Microondas", Descripcion="Microondas con grill", Precio=199.99m * 61.57m, Stock=70, Categoria="Electrodomésticos", FechaCreacion=DateTime.Now},
+            new Producto {Id=17, Nombre="Microondas", Descripcion="Microondas con grill", Precio=199.99m * 61.57m, Stock=7, Categoria="Electrodomésticos", FechaCreacion=DateTime.Now},
             new Producto {Id=18, Nombre="Refrigerador", Descripcion="Refrigerador de doble puerta", Precio=899.99m * 61.57m, Stock=20, Categoria="Electrodomésticos", FechaCreacion=DateTime.Now},
             new Producto {Id=19, Nombre="Lavadora", Descripcion="Lavadora de carga frontal", Precio=499.99m * 61.57m, Stock=35, Categoria="Electrodomésticos", FechaCreacion=DateTime.Now},
             new Producto {Id=20, Nombre="Secadora", Descripcion="Secadora de ropa", Precio=399.99m * 61.57m, Stock=45, Categoria="Electrodomésticos", FechaCreacion=DateTime.Now},
@@ -58,10 +58,10 @@ namespace Practica_LINQ_CI
             new Producto {Id=44, Nombre="Placa Base", Descripcion = "Placa base ATX", Precio = 8000.00m, Stock = 30, Categoria = "Informática", FechaCreacion = DateTime.Now },
             new Producto {Id=45, Nombre="Memoria RAM", Descripcion = "Memoria RAM de 8GB", Precio = 2500.00m, Stock = 100, Categoria = "Informática", FechaCreacion = DateTime.Now },
             new Producto {Id=46, Nombre="Ventilador CPU", Descripcion = "Ventilador para CPU", Precio = 1500.00m, Stock = 50, Categoria = "Informática", FechaCreacion = DateTime.Now },
-            new Producto {Id=47, Nombre="Case para PC", Descripcion = "Case ATX con ventana", Precio = 5000.00m, Stock = 20, Categoria = "Informática", FechaCreacion = DateTime.Now },
+            new Producto {Id=47, Nombre="Case para PC", Descripcion = "Case ATX con ventana", Precio = 5000.00m, Stock = 8, Categoria = "Informática", FechaCreacion = DateTime.Now },
             new Producto {Id=48, Nombre="Switch de Red", Descripcion = "Switch de 8 puertos", Precio = 2000.00m, Stock = 40, Categoria = "Informática", FechaCreacion = DateTime.Now },
             new Producto {Id=49, Nombre="Adaptador USB", Descripcion = "Adaptador USB a Ethernet", Precio = 800.00m, Stock = 100, Categoria = "Informática", FechaCreacion = DateTime.Now },
-            new Producto {Id=50, Nombre="Impresora 3D", Descripcion = "Impresora 3D de resina", Precio = 35000.00m, Stock = 10, Categoria = "Informática", FechaCreacion = DateTime.Now }
+            new Producto {Id=50, Nombre="Impresora 3D", Descripcion = "Impresora 3D de resina", Precio = 35000.00m, Stock = 6, Categoria = "Informática", FechaCreacion = DateTime.Now }
           };
         }
     }
