@@ -8,10 +8,10 @@ namespace Practica_LINQ_CI
 {
     public class Productos
     {
-        public void ListaProductos(int contador)
+        public List<Producto> ListaProductos()
         {
-            List<Producto> productos = new List<Producto>
-        {
+            return new List<Producto>
+           {
             new Producto {Id=1, Nombre="Laptop", Descripcion="Laptop de alta gama", Precio=999.99m * 61.57m, Stock=50, Categoria="Electrónica", FechaCreacion=DateTime.Now},
             new Producto {Id=2, Nombre="Smartphone", Descripcion="Smartphone con cámara de 108MP", Precio=799.99m * 61.57m, Stock=150, Categoria="Electrónica", FechaCreacion=DateTime.Now},
             new Producto {Id=3, Nombre="Tablet", Descripcion="Tablet con pantalla de 10 pulgadas", Precio=299.99m * 61.57m, Stock=200, Categoria="Electrónica", FechaCreacion=DateTime.Now},
@@ -62,11 +62,7 @@ namespace Practica_LINQ_CI
             new Producto {Id=48, Nombre="Switch de Red", Descripcion = "Switch de 8 puertos", Precio = 2000.00m, Stock = 40, Categoria = "Informática", FechaCreacion = DateTime.Now },
             new Producto {Id=49, Nombre="Adaptador USB", Descripcion = "Adaptador USB a Ethernet", Precio = 800.00m, Stock = 100, Categoria = "Informática", FechaCreacion = DateTime.Now },
             new Producto {Id=50, Nombre="Impresora 3D", Descripcion = "Impresora 3D de resina", Precio = 35000.00m, Stock = 10, Categoria = "Informática", FechaCreacion = DateTime.Now }
-        };
-            
-            if (contador <= 0) return;
-
+          };
         }
     }
-
 }

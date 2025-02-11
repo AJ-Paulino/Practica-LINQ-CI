@@ -4,14 +4,14 @@ using System.Net.Http.Json;
 
 namespace Practica_LINQ_CI
 {
-    internal class Program : Productos
+    internal class Program
     {
         static void Main(string[] args)
         {
-            List<Productos> productos = new List<Productos>();
+            Productos productos = new Productos();
             Consultas consultas = new Consultas();
 
-            //consultas.consulta(productos);
+            consultas.Consulta(productos);
         }
     }
 }

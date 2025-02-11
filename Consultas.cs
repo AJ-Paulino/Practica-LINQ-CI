@@ -8,15 +8,14 @@ namespace Practica_LINQ_CI
 {
     public class Consultas
     {
-        public void consulta(List<Producto> productos)
-        {
-            foreach (var item in productos)
+        public void Consulta(Productos productos)
+        {                        
+            List<Producto> lista = productos.ListaProductos();
+
+            foreach (var item in lista)
             {
-                Console.WriteLine(item);
+                Console.WriteLine($"prueba {item.Id}");
             }
-
-            throw new NotImplementedException();
-
         }
     }
 }

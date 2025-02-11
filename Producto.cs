@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practica_LINQ_CI
 {
-    public class Producto : Productos
+    public class Producto 
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
