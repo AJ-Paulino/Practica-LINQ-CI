@@ -17,6 +17,8 @@ namespace Practica_LINQ_CI
 
             // 1. Obtener todos los productos de la lista.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n1. Obtener todos los productos de la lista:\n");
 
             foreach (var item in lista)
@@ -27,6 +29,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 2. Obtener los nombres de todos los productos.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n2. Obtener los nombres de todos los productos:\n");
 
@@ -39,6 +43,8 @@ namespace Practica_LINQ_CI
 
             // 3. Obtener los productos cuyo precio sea mayor a 500.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n3. Obtener los productos cuyo precio sea mayor a 500:\n");
 
             foreach (var item in lista.Where(p => p.Precio > 500))
@@ -49,6 +55,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 4. Obtener los productos con stock menor a 10.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n4. Obtener los productos con stock menor a 10:\n");
 
@@ -61,6 +69,8 @@ namespace Practica_LINQ_CI
 
             //5.Obtener los productos de la categoría "Electrónica".
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n5. Obtener los productos de la categoría 'Electrónica':\n");
 
             foreach (var item in lista.Where(c => c.Categoria.Contains("Electrónica")))
@@ -71,6 +81,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 6. Obtener los productos cuyo nombre comience con la letra 'L'.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n6. Obtener los productos cuyo nombre comience con la letra 'L':\n");
 
@@ -83,6 +95,8 @@ namespace Practica_LINQ_CI
 
             // 7. Obtener los productos cuyo precio esté entre 100 y 500.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n7. Obtener los productos cuyo precio esté entre 100 y 500:\n");
 
             foreach (var item in lista.Where(p => p.Precio >= 100 && p.Precio <= 500).ToList())
@@ -93,6 +107,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 8. Obtener los productos ordenados por precio ascendente.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n8. Obtener los productos ordenados por precio ascendente:\n");
 
@@ -105,6 +121,8 @@ namespace Practica_LINQ_CI
 
             // 9. Obtener los productos ordenados por precio descendente.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n9. Obtener los productos ordenados por precio descendente:\n");
 
             foreach (var item in lista.OrderByDescending(p => p.Precio))
@@ -115,6 +133,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 10. Obtener los productos ordenados por nombre en orden alfabético.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n10. Obtener los productos ordenados por nombre en orden alfabético:\n");
 
@@ -127,6 +147,8 @@ namespace Practica_LINQ_CI
 
             // 11. Obtener los productos ordenados por stock de mayor a menor.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n11. Obtener los productos ordenados por stock de mayor a menor:\n");
 
             foreach (var item in lista.OrderByDescending(s => s.Stock))
@@ -137,6 +159,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 12. Obtener los primeros 5 productos más caros.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n12. Obtener los primeros 5 productos más caros:\n");
 
@@ -149,6 +173,8 @@ namespace Practica_LINQ_CI
 
             // 13. Obtener los 10 productos con menor stock.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n13. Obtener los 10 productos con menor stock:\n");
 
             foreach (var item in lista.OrderBy(s => s.Stock).Take(10))
@@ -160,6 +186,8 @@ namespace Practica_LINQ_CI
 
             // 14. Obtener la cantidad total de productos en la lista.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n14. Obtener la cantidad total de productos en la lista:\n");
 
             var total = lista.Count();
@@ -169,6 +197,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 15. Obtener la suma de todos los precios de los productos.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n15. Obtener la suma de todos los precios de los productos:\n");
 
@@ -180,15 +210,19 @@ namespace Practica_LINQ_CI
 
             // 16. Obtener el precio promedio de los productos.
 
-            ////Console.WriteLine("\n16. Obtener el precio promedio de los productos:\n");
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
-            ////var preciosPromedio = lista.Average(p => p.Precio);
+            Console.WriteLine("\n16. Obtener el precio promedio de los productos:\n");
 
-            ////Console.WriteLine($"\nEl promedio de los precios de los productos: {Math.Round(preciosPromedio, 2)} RD$");
+            var preciosPromedio = lista.Average(p => p.Precio);
+
+            Console.WriteLine($"\nEl promedio de los precios de los productos: {Math.Round(preciosPromedio, 2)} RD$");
 
             //---
 
             // 17. Obtener el producto más caro.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n17. Obtener el producto más caro:\n");
 
@@ -201,6 +235,8 @@ namespace Practica_LINQ_CI
 
             // 18. Obtener el producto más barato.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n18. Obtener el producto más barato:\n");
 
             foreach (var item in lista.OrderBy(p => p.Precio).Take(1))
@@ -211,6 +247,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 19. Verificar si hay algún producto con precio mayor a 1000.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n19. Verificar si hay algún producto con precio mayor a 1000:\n");
 
@@ -232,6 +270,8 @@ namespace Practica_LINQ_CI
 
             // 20. Verificar si todos los productos tienen stock mayor a 5.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             if (lista.Any(s => s.Stock > 5))
             {
                 Console.WriteLine("\nTodos los productos tienen stock mayor a 5.");
@@ -250,6 +290,8 @@ namespace Practica_LINQ_CI
 
             // 21. Contar cuántos productos hay en la categoría "Audio".
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\nContar cuántos productos hay en la categoría 'Audio':\n");
 
             var totalAudio = lista.Count(c => c.Categoria.Contains("Audio"));
@@ -264,6 +306,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 22. Agrupar los productos por categoría.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n22. Agrupar los productos por categoría:\n");
 
@@ -284,6 +328,8 @@ namespace Practica_LINQ_CI
 
             // 23. Obtener la categoría con más productos.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n23. Obtener la categoría con más productos:\n");
 
             var grupoMayor = lista.GroupBy(c => c.Categoria).OrderByDescending(n => n.Count()).FirstOrDefault();
@@ -295,6 +341,8 @@ namespace Practica_LINQ_CI
 
             // 24. Obtener el stock total de todos los productos.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n24. Obtener el stock total de todos los productos:\n");
 
             var stockTotal = lista.Sum(s => s.Stock);
@@ -304,6 +352,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 25. Obtener el producto con el nombre más largo.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n25. Obtener el producto con el nombre más largo:\n");
 
@@ -318,6 +368,8 @@ namespace Practica_LINQ_CI
 
             // 26. Obtener el producto con la descripción más corta.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n26. Obtener el producto con la descripción más corta:\n");
 
             var descripcionCorta = lista.OrderBy(d => d.Descripcion.Length).FirstOrDefault();
@@ -331,6 +383,8 @@ namespace Practica_LINQ_CI
 
             // 27. Filtrar los productos cuya descripción contenga la palabra "pantalla".
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n27. Filtrar los productos cuya descripción contenga la palabra 'pantalla':\n");
 
             foreach (var item in lista.Where(d => d.Descripcion.Contains("pantalla")))
@@ -342,6 +396,8 @@ namespace Practica_LINQ_CI
 
             // 28. Obtener el promedio de stock de los productos de la categoría "Almacenamiento".
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n28. Obtener el promedio de stock de los productos de la categoría 'Almacenamiento':\n");
 
             var stockPromedioAlmacenamiento = lista.Average(s => s.Stock);
@@ -351,6 +407,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 29. Obtener los productos creados en una fecha específica (20/12/2022).
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n29. Obtener los productos creados en una fecha específica (20/12/2022):\n");
 
@@ -363,6 +421,8 @@ namespace Practica_LINQ_CI
 
             // 30. Obtener los productos cuya ID sea par.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n30. Obtener los productos cuya ID sea par:\n");
 
             foreach (var item in lista.Where(i => i.Id % 2 == 0))
@@ -374,6 +434,8 @@ namespace Practica_LINQ_CI
 
             // 31. Obtener los productos cuya ID sea impar.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n31. Obtener los productos cuya ID sea impar:\n");
 
             foreach (var item in lista.Where(i => i.Id % 2 != 0))
@@ -382,6 +444,8 @@ namespace Practica_LINQ_CI
             }
 
             // 32. Obtener los productos cuyo precio tenga un decimal mayor a .50.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n32. Obtener los productos cuyo precio tenga un decimal mayor a .50:\n");
 
@@ -394,6 +458,8 @@ namespace Practica_LINQ_CI
 
             // 33. Obtener los productos cuyo nombre tenga más de 10 caracteres.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n33. Obtener los productos cuyo nombre tenga más de 10 caracteres:\n");
 
             foreach (var item in lista.Where(n => n.Nombre.Length > 10))
@@ -404,6 +470,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 34. Obtener los productos cuyo stock sea un número primo.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n34. Obtener los productos cuyo stock sea un número primo:\n");
 
@@ -428,6 +496,8 @@ namespace Practica_LINQ_CI
 
             // 35. Obtener los productos cuyo nombre contenga la palabra "Pro".
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n35. Obtener los productos cuyo nombre contenga la palabra 'Pro':\n");
 
             foreach (var item in lista.Where(n => n.Nombre.Contains("Pro")))
@@ -438,6 +508,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 36. Obtener los productos cuyo stock sea un múltiplo de 5.
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n36. Obtener los productos cuyo stock sea un múltiplo de 5:\n");
 
@@ -450,6 +522,8 @@ namespace Practica_LINQ_CI
 
             // 37. Obtener los productos que tengan una descripción con más de 20 caracteres.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n37. Obtener los productos que tengan una descripción con más de 20 caracteres:\n");
 
             foreach (var item in lista.Where(d => d.Descripcion.Length > 20))
@@ -460,6 +534,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 38. Obtener los productos cuyo precio sea un número redondo (sin decimales).
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n38. Obtener los productos cuyo precio sea un número redondo (sin decimales):\n");
 
@@ -472,6 +548,8 @@ namespace Practica_LINQ_CI
 
             // 39. Obtener los productos que tengan exactamente dos palabras en su nombre.
 
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
+
             Console.WriteLine("\n39. Obtener los productos que tengan exactamente dos palabras en su nombre:\n");
 
             foreach (var item in lista.Where(n => n.Nombre.Split(' ').Length == 2))
@@ -482,6 +560,8 @@ namespace Practica_LINQ_CI
             //---
 
             // 40. Obtener la cantidad de productos que no pertenecen a la categoría "General".
+
+            Console.WriteLine("\n----------------------------------------------------------------------------------------\n");
 
             Console.WriteLine("\n40. Obtener la cantidad de productos que no pertenecen a la categoría 'General':\n");
 
