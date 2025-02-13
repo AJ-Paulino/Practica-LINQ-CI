@@ -12,8 +12,8 @@ namespace Practica_LINQ_CI
         {
             return new List<Producto>
            {
-            new Producto {Id=1, Nombre="Laptop", Descripcion="Laptop de alta gama", Precio=999.99m * 61.57m, Stock=9, Categoria="Electrónica", FechaCreacion=DateTime.Now},
-            new Producto {Id=2, Nombre="Smartphone", Descripcion="Smartphone con cámara de 108MP", Precio=799.99m * 61.57m, Stock=150, Categoria="Electrónica", FechaCreacion=DateTime.Now},
+            new Producto {Id=1, Nombre="Laptop", Descripcion="Laptop de alta gama", Precio=999.99m * 61.57m, Stock=9, Categoria="Electrónica", FechaCreacion= new DateTime(2022, 12, 20)},
+            new Producto {Id=2, Nombre="Smartphone", Descripcion="Smartphone con cámara de 108MP", Precio=799.99m * 61.57m, Stock=150, Categoria="Electrónica", FechaCreacion= new DateTime(2022, 12, 20)},
             new Producto {Id=3, Nombre="Tablet", Descripcion="Tablet con pantalla de 10 pulgadas", Precio=299.99m * 61.57m, Stock=200, Categoria="Electrónica", FechaCreacion=DateTime.Now},
             new Producto {Id=4, Nombre="Monitor", Descripcion="Monitor 4K de 27 pulgadas", Precio=399.99m * 61.57m, Stock=75, Categoria="Electrónica", FechaCreacion=DateTime.Now},
             new Producto {Id=5, Nombre="Teclado", Descripcion="Teclado mecánico retroiluminado", Precio=89.99m * 61.57m, Stock=120, Categoria="Accesorios", FechaCreacion=DateTime.Now},

@@ -252,9 +252,9 @@ namespace Practica_LINQ_CI
             //Console.WriteLine("\nContar cuántos productos hay en la categoría 'Audio':\n");
 
             //var totalAudio = lista.Count(c => c.Categoria.Contains("Audio"));
-            
+
             //Console.WriteLine($"\nHay un total de {totalAudio} productos en la categoría 'Audio':");
-            
+
             //foreach (var item in lista.Where(c => c.Categoria.Contains("Audio")))
             //{
             //    Console.WriteLine($"\nID: {item.Id} {item.Nombre} -{item.Descripcion}. Precio: {Math.Round(item.Precio, 2)} RD$. Stock: {item.Stock} -{item.Categoria}- Registrado: {item.FechaCreacion}");
@@ -283,12 +283,103 @@ namespace Practica_LINQ_CI
 
             // 23. Obtener la categoría con más productos.
 
-            Console.WriteLine("\n23. Obtener la categoría con más productos:\n");
+            //Console.WriteLine("\n23. Obtener la categoría con más productos:\n");
 
-            var grupoMayor = lista.GroupBy(c => c.Categoria).OrderByDescending(n => n.Count()).FirstOrDefault();
+            //var grupoMayor = lista.GroupBy(c => c.Categoria).OrderByDescending(n => n.Count()).FirstOrDefault();
 
-            Console.WriteLine($"\nEl grupo con más integrantes es: {grupoMayor!.Key}." +
-                $"\nCon un total de {grupoMayor.Count()} productos.");
+            //Console.WriteLine($"\nEl grupo con más integrantes es: {grupoMayor!.Key}." +
+            //    $"\nCon un total de {grupoMayor.Count()} productos.");
+
+            //---
+
+            // 24. Obtener el stock total de todos los productos.
+
+            //Console.WriteLine("\n24. Obtener el stock total de todos los productos:\n");
+
+            //var stockTotal = lista.Sum(s => s.Stock);
+
+            //Console.WriteLine($"\nStock total de todos los productos: {stockTotal}");
+
+            //---
+
+            // 25. Obtener el producto con el nombre más largo.
+
+            //Console.WriteLine("\n25. Obtener el producto con el nombre más largo:\n");
+
+            //var nombreLargo = lista.OrderByDescending(n => n.Nombre.Length).FirstOrDefault();
+
+            //Console.WriteLine("\nProducto con el nombre más largo: " +
+            //    $"\nID: {nombreLargo!.Id} {nombreLargo.Nombre} -{nombreLargo.Descripcion}. " +
+            //    $"Precio: {Math.Round(nombreLargo.Precio, 2)} RD$. Stock: {nombreLargo.Stock} " +
+            //    $"-{nombreLargo.Categoria}- Registrado: {nombreLargo.FechaCreacion}");
+
+            //---
+
+            // 26. Obtener el producto con la descripción más corta.
+
+            //Console.WriteLine("\n26. Obtener el producto con la descripción más corta:\n");
+
+            //var descripcionCorta = lista.OrderBy(d => d.Descripcion.Length).FirstOrDefault();
+
+            //Console.WriteLine($"\nProducto con la descripción más corta:\n" +
+            //    $"\nID: {descripcionCorta!.Id} -{descripcionCorta.Nombre} -Descripción: {descripcionCorta.Descripcion}. " +
+            //    $"Precio: {Math.Round(descripcionCorta.Precio, 2)} RD$. Stock: {descripcionCorta.Stock} " +
+            //    $"-{descripcionCorta.Categoria}- Registrado: {descripcionCorta.FechaCreacion}");
+
+            //---
+
+            // 27. Filtrar los productos cuya descripción contenga la palabra "pantalla".
+
+            //Console.WriteLine("\n27. Filtrar los productos cuya descripción contenga la palabra 'pantalla':\n");
+
+            //foreach (var item in lista.Where(d => d.Descripcion.Contains("pantalla")))
+            //{
+            //    Console.WriteLine($"\nID: {item.Id} {item.Nombre} -{item.Descripcion}. Precio: {Math.Round(item.Precio, 2)} RD$. Stock: {item.Stock} -{item.Categoria}- Registrado: {item.FechaCreacion}");
+            //}
+
+            //---
+
+            // 28. Obtener el promedio de stock de los productos de la categoría "Almacenamiento".
+
+            //Console.WriteLine("\n28. Obtener el promedio de stock de los productos de la categoría 'Almacenamiento':\n");
+
+            //var item = lista.Where(c => c.Categoria.Contains("Almacenamiento"));
+            //var stockPromedioAlmacenamiento = lista.Average(s => s.Stock);
+
+            //Console.WriteLine($"\nEl promedio de stock en los productos para almacenamiento: {stockPromedioAlmacenamiento}");
+
+            //---
+
+            // 29. Obtener los productos creados en una fecha específica (20/12/2022).
+
+            //Console.WriteLine("\n29. Obtener los productos creados en una fecha específica (20/12/2022):\n");
+
+            //foreach (var item in lista.Where(f => f.FechaCreacion.Date == new DateTime(2022, 12, 20)))
+            //{
+            //    Console.WriteLine($"\nID: {item.Id} {item.Nombre} -{item.Descripcion}. Precio: {Math.Round(item.Precio, 2)} RD$. Stock: {item.Stock} -{item.Categoria}- Registrado: {item.FechaCreacion}");
+            //}
+
+            //---
+
+            // 30. Obtener los productos cuya ID sea par.
+
+            //Console.WriteLine("\n30. Obtener los productos cuya ID sea par:\n");
+
+            //foreach (var item in lista.Where(i => i.Id % 2 == 0))
+            //{
+            //    Console.WriteLine($"\nID: {item.Id} {item.Nombre} -{item.Descripcion}. Precio: {Math.Round(item.Precio, 2)} RD$. Stock: {item.Stock} -{item.Categoria}- Registrado: {item.FechaCreacion}");
+            //}
+
+            //---
+
+            // 31. Obtener los productos cuya ID sea impar.
+
+            Console.WriteLine("\n31. Obtener los productos cuya ID sea impar:\n");
+
+            foreach (var item in lista.Where(i => i.Id % 2 != 0))
+            {
+                Console.WriteLine($"\nID: {item.Id} {item.Nombre} -{item.Descripcion}. Precio: {Math.Round(item.Precio, 2)} RD$. Stock: {item.Stock} -{item.Categoria}- Registrado: {item.FechaCreacion}");
+            }
         }
     }
 }
