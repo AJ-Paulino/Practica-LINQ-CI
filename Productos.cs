@@ -13,15 +13,15 @@ namespace Practica_LINQ_CI
             return new List<Producto>
            {
             new Producto {Id=1, Nombre="Laptop", Descripcion="Laptop de alta gama", Precio=999.99m * 61.57m, Stock=9, Categoria="Electrónica", FechaCreacion= new DateTime(2022, 12, 20)},
-            new Producto {Id=2, Nombre="Smartphone", Descripcion="Smartphone con cámara de 108MP", Precio=799.99m * 61.57m, Stock=150, Categoria="Electrónica", FechaCreacion= new DateTime(2022, 12, 20)},
+            new Producto {Id=2, Nombre="Smartphone Pro", Descripcion="Smartphone Pro con cámara de 108MP", Precio=799.99m * 61.57m, Stock=150, Categoria="Electrónica", FechaCreacion= new DateTime(2022, 12, 20)},
             new Producto {Id=3, Nombre="Tablet", Descripcion="Tablet con pantalla de 10 pulgadas", Precio=299.99m * 61.57m, Stock=200, Categoria="Electrónica", FechaCreacion=DateTime.Now},
             new Producto {Id=4, Nombre="Monitor", Descripcion="Monitor 4K de 27 pulgadas", Precio=399.99m * 61.57m, Stock=75, Categoria="Electrónica", FechaCreacion=DateTime.Now},
             new Producto {Id=5, Nombre="Teclado", Descripcion="Teclado mecánico retroiluminado", Precio=89.99m * 61.57m, Stock=120, Categoria="Accesorios", FechaCreacion=DateTime.Now},
             new Producto {Id=6, Nombre="Ratón", Descripcion="Ratón inalámbrico ergonómico", Precio=1.99m * 61.57m, Stock=180, Categoria="Accesorios", FechaCreacion=DateTime.Now},
-            new Producto {Id=7, Nombre="Impresora", Descripcion="Impresora multifunción", Precio=129.99m * 61.57m, Stock=5, Categoria="Oficina", FechaCreacion=DateTime.Now},
+            new Producto {Id=7, Nombre="Impresora", Descripcion="Impresora multifunción", Precio=129.99m * 61.57m, Stock=5, Categoria="General", FechaCreacion=DateTime.Now},
             new Producto {Id=8, Nombre="Auriculares", Descripcion="Auriculares con cancelación de ruido", Precio=199.99m * 61.57m, Stock=90, Categoria="Audio", FechaCreacion=DateTime.Now},
             new Producto {Id=9, Nombre="Altavoces", Descripcion="Altavoces Bluetooth portátiles", Precio=59.99m * 61.57m, Stock=140, Categoria="Audio", FechaCreacion=DateTime.Now},
-            new Producto {Id=10, Nombre="Cámara", Descripcion="Cámara digital de 24MP", Precio=499.99m * 61.57m, Stock=30, Categoria="Fotografía", FechaCreacion=DateTime.Now},
+            new Producto {Id=10, Nombre="Cámara Pro", Descripcion="Cámara digital Pro de 24MP", Precio=499.99m * 61.57m, Stock=30, Categoria="Fotografía", FechaCreacion=DateTime.Now},
             new Producto {Id=11, Nombre="Televisor", Descripcion="Televisor OLED de 55 pulgadas", Precio=1299.99m * 61.57m, Stock=25, Categoria="Electrónica", FechaCreacion=DateTime.Now},
             new Producto {Id=12, Nombre="Consola", Descripcion="Consola de videojuegos de última generación", Precio=499.99m * 61.57m, Stock=80, Categoria="Juegos", FechaCreacion=DateTime.Now},
             new Producto {Id=13, Nombre="Router", Descripcion="Router Wi-Fi 6", Precio=149.99m * 61.57m, Stock=110, Categoria="Electrónica", FechaCreacion=DateTime.Now},
